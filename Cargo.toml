@@ -1,7 +1,7 @@
 [package]
 name = "i2c-write-iter"
 description = "Exports iterator based parallels to embedded-hal & embedded-hal-async for Write & WriteRead"
-version = "1.0.0-rc.1"
+version = "1.0.0-rc.1.1"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 documentation = "https://docs.rs/i2c-write-iter"
@@ -14,4 +14,4 @@ embedded-hal = { version = "1.0.0-rc.1" }
 embedded-hal-async = { version = "1.0.0-rc.1", optional = true }
 
 [features]
-async = []
+async = ["embedded-hal-async"]
