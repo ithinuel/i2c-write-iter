@@ -18,7 +18,7 @@ pub trait WriteIterRead<A: AddressMode>: I2c<A> {
 
 /// Exposes trait for async.await use cases. Requires the `async` feature.
 #[cfg(feature = "async")]
-mod non_blocking {
+pub mod non_blocking {
     pub use embedded_hal_async::i2c::{AddressMode, I2c};
 
     pub trait WriteIter<A: AddressMode>: I2c<A> {
