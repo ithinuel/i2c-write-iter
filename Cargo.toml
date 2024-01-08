@@ -1,7 +1,7 @@
 [package]
 name = "i2c-write-iter"
 description = "Exports iterator based parallels to embedded-hal & embedded-hal-async for Write & WriteRead"
-version = "1.0.0-rc.1.3"
+version = "1.0.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 documentation = "https://docs.rs/i2c-write-iter"
@@ -11,8 +11,8 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-embedded-hal = { version = "1.0.0-rc.1" }
-embedded-hal-async = { version = "1.0.0-rc.1", optional = true }
+embedded-hal = { version = "1.0.0" }
+embedded-hal-async = { version = "1.0.0", optional = true }
 
 [features]
 async = ["embedded-hal-async"]
